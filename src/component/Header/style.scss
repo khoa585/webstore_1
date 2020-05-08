@@ -1,0 +1,637 @@
+.item {
+   .list__wrapper {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    padding: 20px;
+    background: #ffffff00;
+    display: none;
+    transition: 2s;
+    right: 25%;
+    z-index: 999;
+}
+}
+.name_LB {
+    font-family: Vladimir Script;
+    color: #000000;
+    text-decoration: none;
+}
+.name_LB:hover {
+    color: #c40d2e;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.item:hover{
+  display: block;
+}
+.item:hover {
+  display: block;
+}
+.item:hover .list__wrapper {
+    transition: 2s;
+    display: block;
+}
+.row_{
+  display: flex;
+  justify-content: center;
+ height: 300px;;
+}
+
+.MuiOutlinedInput-input {
+  padding: 15px;
+}
+.list__wrapper ul {
+    position: relative;
+    list-style: none;
+}
+.list_wrapper{
+  display: block!important;
+}
+.formLogin input {
+  padding: 15px;
+}
+.formLogin  label#text-label {
+  font-size: 1em!important;
+}
+.formLogin label#password-label {
+  font-size: 1em!important;
+}
+.formLogin  p#password-helper-text {
+  font-size: 0.8em!important;
+}
+.formLogin  fieldset.PrivateNotchedOutline-root-59.MuiOutlinedInput-notchedOutline{
+  padding-right: 50%;
+}
+.formLoginPass  fieldset.PrivateNotchedOutline-root-59.MuiOutlinedInput-notchedOutline{
+  padding-right: 60%;
+}
+.formLogin p#password-helper-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.form_login{
+  width: 90%;
+}
+.contai_item {
+  position: relative;
+  background: white;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f1f1f1;
+  display: flex;
+  align-items: center;
+}
+.contai_item:before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: 100px;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #f1f1f1;
+  transform: rotate(45deg);
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  background: #ffffff;
+}
+.row_ .col-lg-6:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-right: 1px solid #899e9e;
+}
+.row_ .col-lg-6:nth-child(2){
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.bt {
+    background: none;
+    border: 1px solid #cecece;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    color: black;
+    font-family: Elephant;
+    outline: none;
+    width: 80%;
+    z-index: 99;
+  }
+  .bt:hover {
+    color: white;
+    font-family: Elephant;
+  }
+  .bt::before {
+    position: absolute;
+    background: #c40d2e;
+    height: 0;
+    z-index: -1;
+    transition: 0.5s;
+    content: "";
+    width: 100%;
+    left: 0;
+    border: none;
+  }
+  .btv::before {
+    bottom: 0;
+  }
+  .btv:hover::before {
+    height: 100%;
+  }
+  .ttv:after {
+    content: " \2022";
+  }
+.btn-password {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  }
+.btn-password a {
+    font-size: 1em;
+    color: #7b8888;
+    cursor: pointer;
+
+}
+a.name_LB {
+  color: #4a4a4a;
+  font-size: x-large;
+}
+svg.MuiSvgIcon-root.fa.fa-bars {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+$color: #c40d2e;
+@mixin colors {
+  color: $color;
+  transition: .5s;
+}
+.menu_ {
+  display: flex;
+  align-items: center;
+  .icon_ {
+    display: flex;
+    span{
+      font-size: 1.25em;
+      text-transform: uppercase;
+      color: #4a4a4a;
+      font-weight: 400;
+      cursor: pointer;
+      font-family: none;
+    }
+  }
+  .icon_:hover{
+    svg.MuiSvgIcon-root.fa.fa-bars{
+     @include colors;
+    }
+    span{
+      @include colors;
+    }
+  }
+}
+#mySidenav {
+  overflow-y: hidden;
+  width: 250px;
+  transition: 0.4s;
+}
+.sidenav{
+    overflow-y: hidden;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.4s;
+  .close_btn::before {
+    color: #c40d2e;
+    content: "\002B";
+    position: absolute;
+    left: 30%;
+    font-size: 2em;
+    font-family: "icomoon", arial, helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    transform: rotate(-45deg);
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .close_btn {
+    outline: none;
+    height: 10%;
+    border-bottom: 1px solid #e6dddd !important;
+    background: #fffdfd;
+    width: 250px;
+    position: absolute;
+    border-right: 1px solid #e6dddd !important;
+    border: none;
+  }
+  span.close_btn__ {
+    font-size: 1.2em;
+    color: #c40d2e;
+    font-family: inherit;
+    font-weight: 600;
+  }
+  .close_btn:hover::before {
+    transform: rotate(135deg);
+  }
+}
+.button_Close{
+  height: 10%;
+}
+.noteMenu{
+  background: white;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+.noteMenu_{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-right: 1px solid #e6dddd;
+}
+.noteMenu_TXT{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  li{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        border-bottom: 1px solid #e2e2e2;
+  }
+}
+
+.plannet{
+  height: 30%;
+  width: 100%;
+}
+.plannet::before{
+   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f042";
+    width: 100%;
+}
+#mySidenav_1 {
+  overflow-y: hidden;
+  width: 250px;
+  transition: 0.4s;
+  z-index: 99999;
+}
+.sidenav_1 {
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  left: 250px;
+  height: 100%;
+}
+
+span.watches {
+  border-bottom: 1px solid;
+  font-family: serif;
+  color: #c40d2e;
+  cursor: pointer;
+}
+
+ul.tract {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+span.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  justify-content: space-around;
+}
+@mixin color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+.colorS_{
+  @include color;
+  height: 10%;
+}
+.colorS{
+  @include color;
+  height: 100%;
+}
+li.color_ {
+  background: #e2e2e2;
+}
+.contact0{
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 100%;
+}
+.sidenav0 a,.sidenav0 span{
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #818181;
+  display: block;
+  cursor: pointer;
+}
+.sidenav0{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+ul.level0.submenu {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+}
+@mixin HW($a,$b) {
+  height: $a;
+  width: $b;
+  text-align: center;
+}
+li.level1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.contact1{
+  @include HW(60%,100%);
+}
+.contact2{
+  @include HW(20%,100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+ul.Follow {
+  display: flex;
+  width: 50%;
+  color: #818181;
+  justify-content: space-between;
+  list-style: none;
+}
+.contact3{
+  @include HW(20%,100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.appstore{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  img{
+    cursor: pointer;
+  }
+}
+@mixin content {
+  content: '\f141';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #818181;
+}
+.contact1::after {
+  @include content
+}
+.contact2::after{
+  @include content
+}
+.contact1D{
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 100%;
+}
+li.first {
+  align-items: center;
+}
+li.first::after {
+  @include content
+}
+.silvenap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: cursive;
+  font-size: 0.9em;
+  color: #7d7a7a;
+}
+.closesName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    height: 10%;
+}
+.panel_{
+  display: none!important;
+}
+.tract_ {
+  height: 50%!important;;
+  width: 100%!important;;
+  display: j;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tract__{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.colorS_::after{
+  @include content
+}
+.panel::after{
+  @include content
+}
+.imgPro{
+  display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+  background: none;
+  border: 1px solid #cecece;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 80px;
+  color: black;
+  font-family: Elephant;
+  outline: none;
+  text-transform: uppercase;
+}
+.btn:hover {
+  color: white;
+  font-family: Elephant;
+}
+.btn::before {
+  position: absolute;
+  background: #c40d2e;
+  height: 0;
+  z-index: -1;
+  transition: 0.5s;
+  content: "";
+  width: 100%;
+  left: 0;
+  border: none;
+}
+.btn1::before {
+  bottom: 0;
+}
+.btn1:hover::before {
+  height: 100%;
+}
+button.btn.btn1 {
+  left: 50%;
+  position: absolute;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+.list__wrapper {
+  text-decoration: none;
+  color: #848484;
+  text-align: center;
+}
+.list__wrapper a:hover {
+  color: #7dc641;
+}
+#mySidenav_Two {
+  overflow-y: hidden;
+  width: 500px;
+  transition: 0.4s;
+}
+.sidenav_Two {
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  left: 500px;
+  height: 100%;
+}
+.header{
+  height: 4em;
+  background: white;
+  border-bottom: 1px solid #c3bbbb;
+  position: fixed;
+  z-index: 99;
+}
+.rowHeader{
+  display: flex;
+  height: 4em;
+}
+.rowHeader {
+  .menu{
+    display: flex;
+    justify-content: space-around;
+}
+  .logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+  }
+  .iconWeb{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+}
+.nav-item a{
+  color: #4a4a4a;
+}
+.item-enter {
+  left: 0;
+  z-index: 9999;
+}
+.item-enter-active {
+  left: 250px;
+  z-index: 9999;
+  transition: transform 1s ease-in;
+}
+.item-exit {
+  z-index: 9999;
+  left: 250px;
+}
+.item-exit-active {
+  left: 0;
+  z-index: 9999;
+  transition: transform 1s ease-in;
+}
+.item_mynode-enter {
+  left: 0;
+  z-index: 9999;
+}
+.item_mynode-enter-active {
+  left: 250px;
+  z-index: 9999;
+  transition: transform 1s ease-in;
+}
+.item_mynode-exit {
+  z-index: 9999;
+  left: 250px;
+}
+.item_mynode-exit-active {
+  left: 0;
+  z-index: 9999;
+  transition: transform 1s ease-in;
+}
+.sidenav_{
+  z-index: 9999999;
+  font-family: cursive;
+  font-size: 0.9em;
+  color: #7d7a7a;
+}
+.noteMenu_TXT li::after{
+  @include content
+}
+.modal-content {
+  display: none;
+}
+
+
+
+
+

@@ -1,0 +1,104 @@
+.control1,
+.field-name-prefix .control {
+  display: inline-block;
+  border: 1px solid #e2e2e2;
+  background: #fbfbfb;
+  padding: 4px;
+}
+.field-name-prefix-item {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    position: relative;
+}
+.field-name-prefix-item input[type="radio"] {
+    margin: 0;
+    position: absolute;
+    left: -20px;
+}
+.field-name-prefix-item input[type="radio"]:checked + label {
+    color: #fff;
+    background: #555;
+}
+.field-name-prefix-item label {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    width: 126px;
+    cursor: pointer;
+    transition: color 0.15s,
+}
+.Firstname_ div:first-child,.Lastname_ div:first-child,.Email_ div:first-child,.Password_ div:first-child,.ConfirmPassword_ div:first-child{
+    width: 100%;
+}
+.Firstname_,.Lastname_,.Email_,.Password_,.ConfirmPassword_ {
+    padding: 2% 0 2% 0;
+}
+.Firstname_ input,.Lastname_ input,.Email_ input,.Password_ input,.ConfirmPassword_ input {
+    width: 100%!important;
+}
+.day_{
+    display: flex;
+    justify-content: space-between;
+}
+.date_{
+    width: 100%;
+}
+.date__{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #9b9f9f;
+    outline: none;
+    cursor: pointer;
+}
+
+.dateD_{
+    display: flex;
+    justify-content: center;
+}
+.dateD__{
+    display: flex;
+    justify-content: flex-end;
+}
+.submit_D{
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 0 0;
+}
+
+button.submit_btn.submit_btn_1 {
+    width: 50%;
+  }
+  .submit_btn {
+    background: none;
+    border: 1px solid #cecece;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 80px;
+    color: black;
+    font-family: Elephant;
+    outline: none;
+    text-transform: uppercase;
+}
+.submit_btn:hover {
+    color: white;
+    font-family: Elephant;
+}
+.submit_btn::before {
+    content: "";
+    position: absolute;
+    background: #c40d2e;
+    height: 0;
+    z-index: -1;
+    transition: 0.5s;
+    width: 100%;
+    left: 0;
+    border: none;
+}
+.submit_btn_1::before {
+    bottom: 0;
+}
+.submit_btn:hover::before {
+    height: 100%;
+}

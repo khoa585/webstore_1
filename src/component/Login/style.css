@@ -1,0 +1,53 @@
+h4.Victorinox {
+    text-align: center;
+    font-size: 50px;
+    color: #9a0505;
+    font-family: serif;
+}
+h2.account_ {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 0;
+  }
+.control div:first-child{
+    width: 80%;
+}
+a.btn-password_ {
+  color: #2a2a25;
+  font-family: serif;
+  font-weight: 800;
+  cursor: pointer;
+}
+a.btn-password_:hover {
+  color: #9a0505;
+}
+h2.account {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 0;
+    text-align: center;
+}
+.love {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: cursive;
+}
+button.bt.bt.btv {
+    width: 80%;
+}
+button.bt2.bt.btv {
+    width: 80%;
+}
+button.bt__.bt.btv {
+    width: 100%;
+}
+button.b.bt.btv {
+    width: 30%;
+  }
+.heightLogin_{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
