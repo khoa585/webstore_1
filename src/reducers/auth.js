@@ -1,7 +1,7 @@
 import * as types from './../constants/auth';
 import { toastError, toastSuccess } from '../helpper/toastHelper';
 const initialState = {
-    resultAuthen : false
+    resultAuthen: false
 };
 const reducer = (state = initialState, action) => {
     switch (action.type) {
@@ -9,22 +9,21 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
             };
-        case types.LOGIN_SUCCESS: {
+        case types.LOGIN_SUCCESS:
             const result = action.playload.data;
             const username = result.data.username;
             toastSuccess('🦄 Hello ' + username);
             return {
                 ...state,
-                resultAuthen : true
+                resultAuthen: true
             };
-        };
-        case types.LOGIN_FAILED: {
+
+        case types.LOGIN_FAILED:
             toastError('🦄 Wow so easy!');
             return {
                 ...state,
-                resultAuthen : false
+                resultAuthen: false
             };
-        };
         default: return state;
     }
 };

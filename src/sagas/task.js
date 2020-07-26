@@ -1,10 +1,10 @@
 import {takeLatest,call,put,delay} from "redux-saga/effects";
 import * as taskTypes from "../constants/index";
 import { getList }  from "./../apis/index";
-import { actFetchProductsSucccess,actFetchProductsFailed,showloading,hideloading} from "./../actions/index";
+import { actFetchProductsSucccess,showloading,hideloading} from "./../actions/index";
   
 function* watchFetchListAction(){
-    // yield put(showloading());
+    yield put(showloading());
     const resp = yield call(getList);
     const { data } = resp;
     yield put(actFetchProductsSucccess(data));

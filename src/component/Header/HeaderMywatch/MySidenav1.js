@@ -50,13 +50,22 @@ function MySidenav1(props) {
     };
     const reception = (index) => {
         setstatee(index)
-        if (index != a) {
+        if (index !== a) {
             seta(index)
             setshowT_(true)
         } else {
             setshowT_(!showT_)
         }
     };
+    const show = () => {
+        const result =  list.filter((tast,key) => statee === tast.key )
+        .map((iten, index) => {
+                return <CSSTransition key={index} timeout={200} classNames="item_mynode">
+                    {iten.main}
+                </CSSTransition>
+        })
+        return result
+    }
     return (
         <React.Fragment>
             <div id={showT === true ? 'mySidenav_1' : ''} className="sidenav_1 silvenap">
@@ -77,13 +86,7 @@ function MySidenav1(props) {
             </div >
             <TransitionGroup>
                 {
-                    list.map((iten, index) => {
-                        if (statee === iten.key) {
-                            return <CSSTransition key={index} timeout={200} classNames="item_mynode">
-                                {iten.main}
-                            </CSSTransition>
-                        }
-                    })
+                   show()
                 }
             </TransitionGroup>
         </React.Fragment>

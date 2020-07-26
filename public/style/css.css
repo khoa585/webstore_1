@@ -296,6 +296,7 @@ row.thumb {
   line-height: 31px;
   background-color: #cc3434;
   opacity: 0;
+  visibility: hidden;
   font-family: serif;
   text-align: center;
   cursor: pointer;
@@ -315,16 +316,20 @@ row.thumb {
   transform: rotate(45deg);
 }
 .flasfood:hover .add {
-  opacity: 1;
+  opacity:  1;
+  visibility: visible;
 }
 .flasfood1:hover .Quick {
-  opacity: 1;
+  opacity:  1;
+  visibility: visible;
 }
 .flasfood2:hover .Compare {
-  opacity: 1;
+  opacity:  1;
+  visibility: visible;
 }
 .flasfood3:hover .Wishlist {
   opacity: 1;
+  visibility: visible;
 }
 .custom-spacing {
   margin-top: 50px;
@@ -802,10 +807,24 @@ img.response.img-responsive {
   position: relative;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+.item .control .MuiFormControl-root.MuiTextField-root.formLogin .PrivateNotchedOutline-legendNotched-71 {
+  max-width: 100px!important;
+}
+.item .control .MuiFormControl-root.MuiTextField-root.formLogin.formLoginPass .PrivateNotchedOutline-legendNotched-71 {
+  max-width: 70px!important;
+}
 .da-thumbs li a,
 .da-thumbs li a img {
   display: block;
   position: relative;
+}
+.formLogin p#password-helper-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 2%;
 }
 .da-thumbs li a {
   overflow: hidden;
@@ -1164,6 +1183,7 @@ input:focus {
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: center;
 }
 .mar__{
   position: relative;

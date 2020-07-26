@@ -32,8 +32,12 @@ class ProductItem extends Component {
                             </div>
                             <div className="products_group_button">
                                 <div className="add__cart flasfood products_group_item">
-                                    <i className="fas fa-shopping-cart" />
-                                    <span className="add">Add to cart</span>
+                                    <div>
+                                        <i className="fas fa-shopping-cart" />
+                                        <div>
+                                            <span className="add">Add to cart</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="quick__view flasfood1 products_group_item">
                                     <i className="fas fa-search" />

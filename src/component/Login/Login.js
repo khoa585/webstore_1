@@ -16,7 +16,7 @@ function Login() {
                             </h2>
                         </div>
                         <div>
-                            <form className="form form-login" method>
+                            <form className="form form-login" method="true">
                                 <div className="field email required">
                                     <div className="control">
                                         <Field

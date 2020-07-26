@@ -94,9 +94,9 @@ function Header(props) {
                                 </div>
                               </div><br />
                               <div className="btn-password">
-                                <a>
+                                {/* <a href="" > */}
                                   <span>Forgot Your Password?</span>
-                                </a>
+                                {/* </a> */}
                               </div><br />
                               <div>
                                 <button type="submit" className="bt btv">login</button>

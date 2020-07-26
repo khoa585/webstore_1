@@ -5,12 +5,15 @@ import { bindActionCreators, compose } from "redux";
 import * as taskActions from "./../../actions/index";
 let ProductItem = (props) => {
     let { products_, taskActions } = props;
+    let { actFetchProducts } = taskActions;
     useEffect(() => {
-        if (!props.products_.length) {
-            let { actFetchProducts } = taskActions;
-            actFetchProducts();
-        };
-    }, [])
+        const track = () => {
+            if (!props.products_.length) {
+                actFetchProducts();
+            };
+        }
+        track()
+    }, [props.products_.length,actFetchProducts])
     let add_Cart = (item) => {
         let { actaddCart } = taskActions;
         actaddCart(item, 1)

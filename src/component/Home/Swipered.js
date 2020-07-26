@@ -4,8 +4,10 @@ import 'swiper/css/swiper.css';
 let Swipered = () => {
     let [swiper, updateSwiper] = useState(null);
     let [currentIndex, updateCurrentIndex] = useState(0);
-    let sr = ".swiper-button-next" + ".swiperB";
-    let sr_ = ".swiper-button-prev" + ".swiperB";
+    let sr = ".swiper-button-next" +
+        ".swiperB";
+    let sr_ = ".swiper-button-prev" +
+        ".swiperB";
     let params = {
         Swiper,
         initialSlide: 3,
@@ -16,7 +18,7 @@ let Swipered = () => {
             clickable: true
         },
         navigation: {
-            nextEl:  sr,
+            nextEl: sr,
             prevEl: sr_,
         },
         spaceBetween: 30,
@@ -27,18 +29,19 @@ let Swipered = () => {
         },
         getSwiper: updateSwiper
     };
-    let updateIndex = () => updateCurrentIndex(1 + swiper.realIndex);
     useEffect(() => {
-        if (swiper !== null) {
-            swiper.on('slideChange', updateIndex);
-        }
-        return () => {
+        const track = () =>{
             if (swiper !== null) {
-                swiper.off('slideChange', updateIndex);
+                swiper.on('slideChange', ()=>{updateCurrentIndex(1 + swiper.realIndex);});
             }
-        };
-        
-    }, [swiper]);
+            return () => {
+                if (swiper !== null) {
+                    swiper.off('slideChange', ()=>{updateCurrentIndex(1 + swiper.realIndex);});
+                }
+            };
+        }
+        track()
+    },[currentIndex,swiper]);
     return (
         <>
             <div className="container">

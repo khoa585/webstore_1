@@ -1,7 +1,9 @@
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
-let er = ".swiper-button-next" + ".btN";
-let er_ = ".swiper-button-prev" + ".btP";
+let er = ".swiper-button-next" +
+  ".btN";
+let er_ = ".swiper-button-prev" +
+  ".btP";
 export const Param_ = {
   Swiper,
   slidesPerView: 2,

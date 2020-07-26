@@ -35,8 +35,8 @@ function* add__cart({ payload }) {
             settodoCart.splice(index,1)
             localStorage.setItem("CART", JSON.stringify(settodoCart));
         }
-        let resp = yield call(addcart, { product_, quantity })
-        let { data } = resp;
+         yield call(addcart, { product_, quantity })
+        // let { data } = resp;
     } else {
         let index = -1;
         index = findProductInCart(settodoCart, product_);
@@ -55,7 +55,6 @@ function* List__cart() {
     axiosService.setHeader('Authorization', tokens);
     const resp = yield call(getListCart);
     const { data } = resp;
-    console.log(data)
     if (data) {
         yield put(actFetchListCartsSucccess(data))
     } else {

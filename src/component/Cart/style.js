@@ -14,8 +14,7 @@ const Style = () => ({
     },
     Cart__: {
         display: 'flex',
-        justifyContent: 'space-around',
-        borderBottom: '1px solid #9b9f9f',
+        textAlign: 'center'
     },
     detai_Cart: {
         display: "flex",
@@ -34,7 +33,7 @@ const Style = () => ({
     },
     img_Name: {
         display: "flex",
-        width: '50%',
+        width: '100%',
         alignItems: 'center',
     },
     size_: {
@@ -148,7 +147,7 @@ const Style = () => ({
         height: '80vh',
     },
     infoPlayment: {
-        height: '95%',
+        height: '100%',
         width: '100%',
         background: "#846325;",
         borderRadius: '20px',
@@ -158,38 +157,40 @@ const Style = () => ({
         width: '90%',
         margin: 'auto',
         height: '100%',
+        flexDirection: 'column',
+        display : 'flex'
     },
     infoPlayment__: {
         color: '#fff',
         fontWeight: '800',
     },
     infoPlayment__S: {
-        height: '20%',
+        height: '100%',
         borderBottom: '1px solid #9b9f9f',
         display: 'flex',
         alignItems: 'center',
     },
     infoPlayment_method: {
-        height: '20%',
+        height: '100%',
         borderBottom: '1px solid #9b9f9f',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
     },
     CartNumber: {
-        height: '20%',
+        height: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
     },
     Date: {
-        height: '20%',
+        height: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
     },
     checkout: {
-        height: '20%',
+        height: '100%',
         display: 'flex',
         alignItems: 'center',
     },
@@ -201,6 +202,7 @@ const Style = () => ({
         display: 'flex',
         justifyContent: 'space-around',
         padding: '2% 0 0 0',
+
     },
     infoPlayment___: {
         fontFamily: 'serif',

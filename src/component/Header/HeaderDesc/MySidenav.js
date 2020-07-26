@@ -92,12 +92,11 @@ function MySidenav(props) {
             </div>
             <TransitionGroup>
                 {
-                    list.map((iten, index) => {
-                        if (state === iten.key) {
+                    list.filter((tast)=>state === tast.key)
+                    .map((iten, index) => {
                             return <CSSTransition key={index} timeout={200} classNames="item">
                                 {iten.main}
                             </CSSTransition>
-                        }
                     }
                     )
                 }

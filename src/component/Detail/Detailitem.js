@@ -36,6 +36,14 @@ const Detailitem = props => {
       backgroundImage: `url(https://apiproductjs.herokuapp.com/${bg})`
     };
   };
+  const showP = () => {
+    task.productImage.filter((tast,key) => parseInt(activeC.bgImgage, 10) === key )
+    .map((index, key) => {
+        return <div key={key} className="product-pic">
+          <img className="img-responsive slideCart" src={`https://apiproductjs.herokuapp.com/${index}`} alt=""></img>
+          </div>;
+    })
+  }
   return (
     <div className="container-fluid">
       <div className="row shopping__card__wrapper">
@@ -93,7 +101,7 @@ const Detailitem = props => {
                 </h3>
               </div>
               <div className={classes.back}>
-                <KeyboardArrowLeftIcon  onClick={() => handclickDrag("menua", state.menua)}
+                <KeyboardArrowLeftIcon onClick={() => handclickDrag("menua", state.menua)}
                   className={classes.KeyboardArrowLeftIcon}
                 ></KeyboardArrowLeftIcon>
               </div>
@@ -112,11 +120,7 @@ const Detailitem = props => {
                 >
                   <div>
                     {
-                      task.productImage.map((index, key) => {
-                        if (parseInt(activeC.bgImgage, 10) === key) {
-                          return <div key={key} className="product-pic"><img className="img-responsive slideCart" src={`https://apiproductjs.herokuapp.com/${index}`} /></div>;
-                        }
-                      })
+                      showP()
                     }
                   </div>
                 </CSSTransition>
